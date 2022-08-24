@@ -7,6 +7,7 @@
  * fail.
  * 
  */
+package defaultPackage;
 public class ElseIf {
     public static void main(String[] args) {
         int percentage=75;

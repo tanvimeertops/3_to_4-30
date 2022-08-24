@@ -4,6 +4,7 @@
  * 2=tuesday
  * 3=wednesday
  */
+package defaultPackage;
 public class SwitchCase {
     public static void main(String[] args) {
         int ncase=2;

@@ -7,6 +7,7 @@ input. If the user input is not a letter (between a and z or A and Z), or is a
 string of length > 1, print an error message.
 
 */
+package defaultPackage;
 public class LogicalOperatorIfElse {
    
    public static void main(String[] args) {

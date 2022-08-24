@@ -2,9 +2,9 @@ import java.lang.StackWalker.StackFrame;
 
 public class NestedForLoop {
     public static void main(String[] args) {
-        int i=1,sp=4;
+        //ch i='A';
         for (int row = 1; row<=5; row++) {
-            for (int space = 1; space<=sp; space++) {
+            for (int space = 4; space>=row; space--) {
                 System.out.print(" ");
                 
             }
@@ -12,7 +12,7 @@ public class NestedForLoop {
                 System.out.print("*");
             }
             System.out.println();
-            sp--;
+            //sp--;
         }
 
     }

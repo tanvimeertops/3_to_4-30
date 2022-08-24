@@ -1,4 +1,5 @@
 //wap in java to check vowel or consonant
+package defaultPackage;
 public class SwitchVowel{
     public static void main(String[] args) {
         char ch='a';

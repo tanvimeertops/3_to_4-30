@@ -6,6 +6,7 @@
  * switch
  */
 //greatest of two nos.
+package defaultPackage;
 public class ControlStatement {
 
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package defaultPackage;
 import java.util.Scanner;
 
 /*java runs on both compiler as well as on interpreter
@@ -33,6 +34,7 @@ import java.util.Scanner;
  * datatype: type of data
  * variable is a storage container of a specific type.
  */
+
 public class FirstClass {
     public static void main(String[] b) {
         Scanner sc=new Scanner(System.in);
