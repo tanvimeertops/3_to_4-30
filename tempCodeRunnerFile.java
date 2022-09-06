@@ -1,2 +1,1 @@
-
-        System.out.println(str);
+Box dc=new Box();
