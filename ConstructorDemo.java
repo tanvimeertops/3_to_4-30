@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * class : collection of data member and member function.
  * object: gives the permission to access the functionality of the class.
@@ -18,14 +20,30 @@ whose task is to initialise the object.
  * 2.Parameterised (parameter)
  * 3.copy(object as argument) //cloning of object. 
  -->constructor overloading : same name different parameter
+ in java object are stored in heap memory.
+ java has automatic memory management
+ garbage collector: whenever the objects are no longer required 
+ it is destroyed by garbage collector.
+ it is present in jvm
+ error : virtual memory error
+
  */
 class Box{
     private int length,width,height;
+    Scanner sc=new Scanner(System.in);
+    
     Box(){
-        length=1;
-        width=2;
-        height=3;
-        System.out.println("in default constructor");
+
+        // length=1;
+        // width=2;
+        // height=3;
+
+        System.out.println("Enter length:");
+        length=sc.nextInt();
+        System.out.println("Enter length:");
+        width=sc.nextInt();
+        System.out.println("Enter length:");
+        height=sc.nextInt();
     }
     Box(int l,int w,int h){
         length=l;
@@ -34,6 +52,12 @@ class Box{
         System.out.println("in parameterised constructor");
     }
 
+    Box(Box b){
+        System.out.println("in copy constructor");
+            length=b.length;
+            width=b.width;
+            height=b.height;
+    }
     void volume(){
         System.out.println("volume:"+length*width*height);
     }
@@ -45,5 +69,7 @@ public class ConstructorDemo {
        dc.volume();
        Box pc=new Box(4, 5, 6);
        pc.volume();
+       Box cc=new Box(pc);
+       cc.volume();
     }
 }
