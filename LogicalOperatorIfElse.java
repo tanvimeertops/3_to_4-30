@@ -22,5 +22,8 @@ public class LogicalOperatorIfElse {
     else
     System.out.println("consonant");
     }
+
+
+    
    } 
 }
